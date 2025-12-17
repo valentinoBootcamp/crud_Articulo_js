@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APLICACION ARTICULO</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"> 
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">APLICACION PRODUCTO</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+
+            <!-- FORM -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>FORMULARIO</h4>
+                    </div>
+                    <form id="formularioArticulo" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="NOMBRE ARTICULO" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="precio" step="1" placeholder="PRECIO ARTICULO"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="anio" min="1900" max="2099" step="1" value="2018"
+                                class="form-control">
+                        </div>
+                        <input type="submit" value="GUARDAR" class="btn btn-info btn-block">
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUCTS LIST -->
+            <div id="listaArticulo" class="col-md-8"></div>
+        </div>
+    </div>
+
+   
+    <script src="App.js"></script>
+</body>
+
+</html>
